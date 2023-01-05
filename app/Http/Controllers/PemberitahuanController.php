@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\pemberitahuan;
+use App\Models\Pemberitahuan;
 use Illuminate\Http\Request;
 
 class PemberitahuanController extends Controller
@@ -41,10 +41,10 @@ class PemberitahuanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\pemberitahuan  $pemberitahuan
+     * @param  \App\Models\Pemberitahuan  $pemberitahuan
      * @return \Illuminate\Http\Response
      */
-    public function show(pemberitahuan $pemberitahuan)
+    public function show(Pemberitahuan $pemberitahuan)
     {
         //
     }
@@ -52,10 +52,10 @@ class PemberitahuanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\pemberitahuan  $pemberitahuan
+     * @param  \App\Models\Pemberitahuan  $pemberitahuan
      * @return \Illuminate\Http\Response
      */
-    public function edit(pemberitahuan $pemberitahuan)
+    public function edit(Pemberitahuan $pemberitahuan)
     {
         //
     }
@@ -64,10 +64,10 @@ class PemberitahuanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\pemberitahuan  $pemberitahuan
+     * @param  \App\Models\Pemberitahuan  $pemberitahuan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, pemberitahuan $pemberitahuan)
+    public function update(Request $request, Pemberitahuan $pemberitahuan)
     {
         //
     }
@@ -75,10 +75,10 @@ class PemberitahuanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\pemberitahuan  $pemberitahuan
+     * @param  \App\Models\Pemberitahuan  $pemberitahuan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(pemberitahuan $pemberitahuan)
+    public function destroy(Pemberitahuan $pemberitahuan)
     {
         //
     }

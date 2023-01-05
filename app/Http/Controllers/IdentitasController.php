@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\identitas;
+use App\Models\Identitas;
 use Illuminate\Http\Request;
 
 class IdentitasController extends Controller
@@ -41,10 +41,10 @@ class IdentitasController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\identitas  $identitas
+     * @param  \App\Models\Identitas  $identitas
      * @return \Illuminate\Http\Response
      */
-    public function show(identitas $identitas)
+    public function show(Identitas $identitas)
     {
         //
     }
@@ -52,10 +52,10 @@ class IdentitasController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\identitas  $identitas
+     * @param  \App\Models\Identitas  $identitas
      * @return \Illuminate\Http\Response
      */
-    public function edit(identitas $identitas)
+    public function edit(Identitas $identitas)
     {
         //
     }
@@ -64,10 +64,10 @@ class IdentitasController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\identitas  $identitas
+     * @param  \App\Models\Identitas  $identitas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, identitas $identitas)
+    public function update(Request $request, Identitas $identitas)
     {
         //
     }
@@ -75,10 +75,10 @@ class IdentitasController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\identitas  $identitas
+     * @param  \App\Models\Identitas  $identitas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(identitas $identitas)
+    public function destroy(Identitas $identitas)
     {
         //
     }

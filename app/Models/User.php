@@ -30,6 +30,11 @@ class User extends Authenticatable
         'terakhir_login',
     ];
 
+    public function peminjamans()
+    {
+        return $this->hasMany(peminjaman::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

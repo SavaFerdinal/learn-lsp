@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\buku;
+use App\Models\Buku;
 use Illuminate\Http\Request;
 
 class BukuController extends Controller
@@ -41,10 +41,10 @@ class BukuController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\buku  $buku
+     * @param  \App\Models\Buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function show(buku $buku)
+    public function show(Buku $buku)
     {
         //
     }
@@ -52,10 +52,10 @@ class BukuController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\buku  $buku
+     * @param  \App\Models\Buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function edit(buku $buku)
+    public function edit(Buku $buku)
     {
         //
     }
@@ -64,10 +64,10 @@ class BukuController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\buku  $buku
+     * @param  \App\Models\Buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, buku $buku)
+    public function update(Request $request, Buku $buku)
     {
         //
     }
@@ -75,10 +75,10 @@ class BukuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\buku  $buku
+     * @param  \App\Models\Buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function destroy(buku $buku)
+    public function destroy(Buku $buku)
     {
         //
     }

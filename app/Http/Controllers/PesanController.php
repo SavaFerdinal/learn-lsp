@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\pesan;
+use App\Models\Pesan;
 use Illuminate\Http\Request;
 
 class PesanController extends Controller
@@ -41,10 +41,10 @@ class PesanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\pesan  $pesan
+     * @param  \App\Models\Pesan  $pesan
      * @return \Illuminate\Http\Response
      */
-    public function show(pesan $pesan)
+    public function show(Pesan $pesan)
     {
         //
     }
@@ -52,10 +52,10 @@ class PesanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\pesan  $pesan
+     * @param  \App\Models\Pesan  $pesan
      * @return \Illuminate\Http\Response
      */
-    public function edit(pesan $pesan)
+    public function edit(Pesan $pesan)
     {
         //
     }
@@ -64,10 +64,10 @@ class PesanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\pesan  $pesan
+     * @param  \App\Models\Pesan  $pesan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, pesan $pesan)
+    public function update(Request $request, Pesan $pesan)
     {
         //
     }
@@ -75,10 +75,10 @@ class PesanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\pesan  $pesan
+     * @param  \App\Models\Pesan  $pesan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(pesan $pesan)
+    public function destroy(Pesan $pesan)
     {
         //
     }
