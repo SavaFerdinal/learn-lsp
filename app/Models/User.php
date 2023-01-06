@@ -32,7 +32,12 @@ class User extends Authenticatable
 
     public function peminjamans()
     {
-        return $this->hasMany(peminjaman::class);
+        return $this->hasMany(Peminjaman::class);
+    }
+
+    public function pesans()
+    {
+        return $this->hasMany(Pesan::class);
     }
 
     /**

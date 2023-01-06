@@ -16,6 +16,7 @@ class CreateIdentitasTable extends Migration
         Schema::create('identitas', function (Blueprint $table) {
             $table->id();
             $table->string('nama_app', 50);
+            $table->text('photo')->nullable();
             $table->text('alamat_app');
             $table->string('email_app', 125);
             $table->char('nomor_hp', 50);

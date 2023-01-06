@@ -18,11 +18,11 @@ class Buku extends Model
 
     public function penerbit()
     {
-        return $this->belongsTo(penerbit::class);
+        return $this->belongsTo(Penerbit::class);
     }
 
     public function peminjaman()
     {
-        return $this->hasOne(peminjaman::class);
+        return $this->hasOne(Peminjaman::class);
     }
 }

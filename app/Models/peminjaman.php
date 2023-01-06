@@ -10,6 +10,7 @@ class Peminjaman extends Model
     use HasFactory;
 
     protected $fillable = ['user_id', 'buku_id', 'tanggal_peminjaman', 'tanggal_pengembalian', 'kondisi_buku_saat_dipinjam', 'kondisi_buku_saat_dikembalikan', 'denda'];
+    protected $table = 'peminjamans';
 
     public function siswa()
     {

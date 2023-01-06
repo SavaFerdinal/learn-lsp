@@ -15,11 +15,9 @@ class CreatePesansTable extends Migration
     {
         Schema::create('pesans', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('penerima_id');
-            $table->foreign('penerima_id')->references('id')->on('users')->onDelete('cascade');
-            $table->unsignedBigInteger('pengirim_id');
-            $table->foreign('pengirim_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('judul', 100);
+            $table->foreignId('penerima_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('pengirim_id')->constrained('users')->onDelete('cascade');
+            $table->string('judul', 200);
             $table->text('isi');
             $table->enum('status', ['terkirim', 'dibaca'])->nullable();
             $table->dateTime('tanggal_kirim');
