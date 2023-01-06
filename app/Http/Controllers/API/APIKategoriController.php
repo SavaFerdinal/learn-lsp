@@ -29,10 +29,6 @@ class APIKategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -47,28 +43,6 @@ class APIKategoriController extends Controller
             'nama' => $request->nama,
         ]);
         return response()->json(['msg' => 'Data created', 'data' => $kategori], 201);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Kategori  $kategori
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Kategori $kategori)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Kategori  $kategori
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Kategori $kategori)
-    {
-        //
     }
 
     /**
